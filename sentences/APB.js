@@ -40,10 +40,15 @@ module.exports = function (app) {
     sentence: 'APB',
     title: 'APB - Autopilot info',
     keys: [
-      'navigation.courseGreatCircle.crossTrackError',
+	'navigation.courseGreatCircle.crossTrackError',
       'navigation.courseGreatCircle.bearingTrackTrue',
       'navigation.courseGreatCircle.nextPoint.bearingTrue',
-      'navigation.courseGreatCircle.nextPoint.bearingMagnetic'
+      'navigation.courseGreatCircle.nextPoint.bearingMagnetic',
+      'navigation.courseRhumbline.bearingOriginToDestinationTrue',
+      'navigation.courseRhumbline.bearingToDestinationTrue',
+      'navigation.courseRhumbline.bearingTrackTrue',
+      'navigation.courseRhumbline.crossTrackError',
+      'navigation.courseRhumbline.nextPoint.ID'
     ],
     f: function (xte, originToDest, bearingTrue, bearingMagnetic) {
       return nmea.toSentence([

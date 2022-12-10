@@ -16,11 +16,16 @@ module.exports = function (app) {
     sentence: 'RMB',
     title: 'RMB - Heading and distance to waypoint',
     keys: [
+	  'navigation.courseRhumbline.bearingTrue',
       'navigation.courseRhumbline.crossTrackError',
       'resources.waypoints.next.position.latitude',
       'resources.waypoints.next.position.longitude',
+      'navigation.courseRhumbline.nextPoint',
+      'navigation.courseRhumbline.nextPoint.bearingTrue',
       'navigation.courseRhumbline.nextPoint.distance',
-      'navigation.courseRhumbline.bearingTrue'
+      'navigation.courseRhumbline.nextPoint.latitude',
+      'navigation.courseRhumbline.nextPoint.longitude',
+      'navigation.courseRhumbline.nextPoint.velocityMadeGood'
     ],
     f: function (
       crossTrackError,
